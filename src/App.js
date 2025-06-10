@@ -181,11 +181,21 @@ function App() {
               }}
               style={{
                 margin: "5px",
-                backgroundColor: selectedColor,
-                color: selectedColor === "#000000" ? "#ffffff" : "#000000",
-                padding: "10px",
+                padding: "10px 16px",
                 borderRadius: "8px",
                 fontWeight: "bold",
+                backgroundColor: layout === key ? "#333" : selectedColor,
+                color:
+                  layout === key
+                    ? "#ffffff"
+                    : selectedColor === "#000000"
+                    ? "#ffffff"
+                    : "#000000",
+                border: layout === key ? "2px solid #000" : "1px solid #aaa",
+                transform: layout === key ? "scale(1.05)" : "none",
+                boxShadow: layout === key ? "0 0 10px rgba(0,0,0,0.2)" : "none",
+                transition: "all 0.2s ease",
+                cursor: "pointer",
               }}
             >
               Layout {key} ({layoutPresets[key]} poses)
