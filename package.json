@@ -2,6 +2,7 @@
   "name": "photo-booth",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://jaden-atienza.github.io/photo-booth",
   "dependencies": {
     "@testing-library/dom": "^10.4.0",
     "@testing-library/jest-dom": "^6.6.3",
@@ -12,6 +13,9 @@
     "react-dom": "^19.1.0",
     "react-scripts": "5.0.1",
     "web-vitals": "^2.1.4"
+  },
+  "devDependencies":{
+    "gh-pages": "^6.1.1"
   },
   "scripts": {
     "start": "react-scripts start",
