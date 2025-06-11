@@ -88,7 +88,7 @@ function App() {
   };
 
   return (
-    <div style={{ fontFamily: "'Baloo 2', cursive", textAlign: "center", padding: "20px", position: "relative" }}>
+    <div style={{ fontFamily: "'Baloo 2', cursive", textAlign: "center", padding: "20px", position: "relative", background: "f4f3f2" }}>
       <h1>Bunluke's Photo Booth</h1>
 
       {/* Countdown Overlay */}
