@@ -168,7 +168,26 @@ function App() {
             type="color"
             value={selectedColor}
             onChange={(e) => setSelectedColor(e.target.value)}
+            style={{ marginRight: "10px" }}
           />
+          {[{ label: "White", color: "#ffffff" }, { label: "Black", color: "#000000" }, { label: "Grey", color: "#cccccc" }, { label: "Pink", color: "#ffd1dc" }, { label: "Blue", color: "#aec6cf" }, { label: "Red", color: "#ff6961" }].map(({ label, color }) => (
+            <button
+              key={label}
+              onClick={() => setSelectedColor(color)}
+              style={{
+                backgroundColor: color,
+                color: color === "#000000" ? "#ffffff" : "#000000",
+                border: selectedColor === color ? "3px solid #000" : "1px solid #999",
+                borderRadius: "6px",
+                padding: "6px 12px",
+                marginRight: "6px",
+                cursor: "pointer",
+                fontWeight: "bold",
+              }}
+            >
+              {label}
+            </button>
+          ))}
         </div>
 
         <div style={{ marginBottom: "20px" }}>
